@@ -115,6 +115,7 @@ public class Juego implements Runnable{
 
 			jugador.desplazarse(jugador.getVelocidad());
 			
+			System.out.println("Fin de Truno: ");
 			System.out.println(jugador.toString());
 			System.out.println(enemigo.toString());
 			
@@ -124,6 +125,7 @@ public class Juego implements Runnable{
 			
 			jugador.desplazarse(jugador.getVelocidad());
 			
+			System.out.println("Fin de Truno: ");
 			System.out.println(jugador.toString());
 			System.out.println(enemigo.toString());
 			//turno 3
@@ -132,6 +134,7 @@ public class Juego implements Runnable{
 			jugador.alterarse("DEBILIDAD");
 			jugador.desplazarse(jugador.getVelocidad());
 			
+			System.out.println("Fin de Truno: ");
 			System.out.println(jugador.toString());
 			System.out.println(enemigo.toString());
 			//turno 4
@@ -141,6 +144,7 @@ public class Juego implements Runnable{
 			jugador.alterarse("INVULNERABILIDAD");
 			jugador.desplazarse(jugador.getVelocidad());
 			
+			System.out.println("Fin de Truno: ");
 			System.out.println(jugador.toString());
 			System.out.println(enemigo.toString());
 			//turno 5
@@ -150,6 +154,7 @@ public class Juego implements Runnable{
 			jugador.atacar(enemigo);
 			enemigo.alterarse("DEBILIDAD");
 			
+			System.out.println("Fin de Truno: ");
 			System.out.println(jugador.toString());
 			System.out.println(enemigo.toString());
 			//turno 6
@@ -158,6 +163,7 @@ public class Juego implements Runnable{
 			
 			jugador.desplazarse(jugador.getVelocidad());
 			jugador.atacar(enemigo);
+			System.out.println("Fin de Truno: ");
 			System.out.println(jugador.toString());
 			System.out.println(enemigo.toString());
 			

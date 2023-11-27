@@ -13,7 +13,7 @@ public class mainConsola {
 	public static void main(String[] args) {
 
 		IAlterable guerrero = new Guerrero();
-		IAlterable mago = new Mago(new Posicion(guerrero.getPosicion().getX() + 210));
+		IAlterable mago = new Mago(new Posicion(guerrero.getPosicion().getX() + 768));
 		
 		System.out.println(mago.toString());
 		System.out.println(guerrero.toString());
