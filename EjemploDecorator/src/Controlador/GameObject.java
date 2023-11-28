@@ -1,12 +1,6 @@
 package Controlador;
 
 import java.awt.image.BufferedImage;
-import java.io.IOException;
-import java.io.InputStream;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-
-import javax.imageio.ImageIO;
 
 import Modelo.Decorator.Debilidad;
 import Modelo.Decorator.IAlterable;
@@ -17,7 +11,6 @@ import Modelo.Decorator.Quemadura;
 public class GameObject extends PersonajeConEfectoDecorator {
 
 	private float xDelta = 100;
-	private BufferedImage allSprites;
 	private BufferedImage[][] animations;
 	private int animTick,animIndex,actualAction, animSpeed =  20;
 	private double gamespeed = 1000/Juego.FPS_SET;

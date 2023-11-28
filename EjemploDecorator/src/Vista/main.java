@@ -1,8 +1,5 @@
 package Vista;
 
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-
 import Controlador.Juego;
 import Modelo.Guerrero;
 import Modelo.Mago;

@@ -1,11 +1,6 @@
 package Modelo.Decorator;
 
 import java.awt.image.BufferedImage;
-import java.io.IOException;
-import java.io.InputStream;
-
-import javax.imageio.ImageIO;
-
 import Modelo.Posicion;
 
 public abstract class PersonajeConEfectoDecorator implements IAlterable {

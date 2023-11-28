@@ -7,7 +7,6 @@ import java.io.InputStream;
 import javax.imageio.ImageIO;
 
 import Modelo.Decorator.IAlterable;
-import Modelo.Decorator.Quemadura;
 
 public class Mago extends Personaje {
 
@@ -28,20 +27,14 @@ public class Mago extends Personaje {
 		this.posicion = posicion;
 		this.mana = 100;
 	}
-	@Override
-	public void atacar(IAlterable enemigo) {
-		if(Atacable(enemigo))
-			enemigo.recibirDanio(ataque, 0);
 
-	}
-	public void habilidadFuego(IAlterable enemigo) {
+	/*public void habilidadFuego(IAlterable enemigo) {
 		if(Atacable(enemigo) && this.mana > 20) {
 			enemigo.recibirDanio(ataque, 0);
-			//enemigo = new Quemadura(enemigo); no hay referencia
 		    this.mana-=20;
 		}
 
-	}
+	}*/
 	
 	@Override
 	public void usarHabilidad(IAlterable alterable, String nombreHabilidad) {

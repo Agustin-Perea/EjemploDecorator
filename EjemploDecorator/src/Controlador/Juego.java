@@ -1,10 +1,6 @@
 package Controlador;
 
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-
 import Modelo.Decorator.IAlterable;
-import Modelo.Decorator.Quemadura;
 import Vista.MyPanel;
 
 public class Juego implements Runnable{
@@ -52,8 +48,6 @@ public class Juego implements Runnable{
 		
 		long previousTime = System.nanoTime();
 		
-		int frames = 0;
-		int updates = 0;
 		long lastCheck = System.currentTimeMillis();
 		
 		double deltaU = 0;
@@ -71,20 +65,15 @@ public class Juego implements Runnable{
 				this.jugador.updateAnimationTick();
 				this.enemigo.updateAnimationTick();
 
-				updates++;
 				deltaU--;
 			}
 			if(deltaF >=1) {//render update per second
 				vista.RenderUpdate();
-				frames++;
 				deltaF--;
 			}
 
 			if(System.currentTimeMillis() -lastCheck >=1000) {//fps
 				lastCheck = System.currentTimeMillis();
-				//System.out.println("FPS: "+frames);
-				frames=0;
-				updates=0;
 			}
 			
 		}

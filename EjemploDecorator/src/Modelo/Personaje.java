@@ -16,7 +16,12 @@ public abstract class Personaje implements IAlterable{
 	
 	//render
 	
-	public abstract void atacar(IAlterable enemigo);
+	@Override
+	public void atacar(IAlterable enemigo) {
+		if(Atacable(enemigo))
+			enemigo.recibirDanio(ataque, 0);
+
+	}
 	
 	public void desplazarse(int desplazamiento) {
 		this.posicion.setPosicionX(this.posicion.getX() + desplazamiento);

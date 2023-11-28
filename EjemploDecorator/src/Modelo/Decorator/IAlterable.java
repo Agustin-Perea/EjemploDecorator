@@ -2,7 +2,6 @@ package Modelo.Decorator;
 
 import java.awt.image.BufferedImage;
 
-import Modelo.Personaje;
 import Modelo.Posicion;
 
 public interface IAlterable {
