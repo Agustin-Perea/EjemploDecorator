@@ -141,7 +141,7 @@ public class Juego implements Runnable{
 			
 			jugador.desplazarse(jugador.getVelocidad());
 			jugador.atacar(enemigo);
-			//enemigo.alterarse("DEBILIDAD");
+			enemigo.alterarse("DEBILIDAD");
 			
 			System.out.println("Fin de Truno: ");
 			System.out.println(jugador.toString());
