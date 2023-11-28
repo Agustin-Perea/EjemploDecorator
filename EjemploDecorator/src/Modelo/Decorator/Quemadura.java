@@ -44,7 +44,7 @@ public class Quemadura extends PersonajeConEfectoDecorator {
 		}
 		@Override
 		public void loadAnimations() {
-			this.animations = new BufferedImage[12][6];
+			super.loadAnimations();
 			for(int i=0; i<animations.length-6;i++) 
 				for(int j=0; j<animations[i].length;j++) {
 					animations[i][j]= allSprites.getSubimage(j*17,(i+6)*17, 17,17);

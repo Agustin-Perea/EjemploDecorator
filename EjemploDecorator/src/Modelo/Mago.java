@@ -49,6 +49,7 @@ public class Mago extends Personaje {
 					if(this.mana>=50) this.mana-=50;
 					break;
 		}
+		//alterable.alterarse(nombreHabilidad);
 		
 		
 	}

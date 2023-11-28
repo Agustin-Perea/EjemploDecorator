@@ -93,7 +93,7 @@ public class GameObject extends PersonajeConEfectoDecorator {
 			actualAction = 5;
 			animIndex = 0;
 
-			Thread.sleep( (long) (((animationsSpriteAmount[actualAction])+1)*120));//x ticks
+			Thread.sleep( (long) (((animationsSpriteAmount[actualAction])+1)*130));//x ticks
 			muerto = true;
         	
 		} catch (InterruptedException e) {
@@ -130,7 +130,7 @@ public class GameObject extends PersonajeConEfectoDecorator {
 			
 			actualAction = 4;
 			animIndex = 0;
-			Thread.sleep( ((animationsSpriteAmount[actualAction])+1)*160);//x ticks
+			Thread.sleep( ((animationsSpriteAmount[actualAction])+1)*166);//x ticks
 			//alterable.alterarse(nombreHabilidad);// por alguna razon esta linea hace que tome la altura de la imagen como 102 en vez de 204 y lanza exception al cargar las animaciones
         	
         	actualAction = 0;
